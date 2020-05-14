@@ -37,17 +37,6 @@ public class Bookstore {
         }
     }
 
-    // Create setter and getter for loadTitles
-    // public void settitles(ArrayList<String> titles) {
-    // this.titles = titles;
-    // }
-    // for loop
-    // public static void ArrayList gettitles(ArrayList<String> list, Integer index)
-    // {
-    // for (int i = 0; i < list.size(); i++) {
-    // list.get(i);
-    // }
-
     public void gettitles() {
         for (int i = 0; i < 10; i++) {
             System.out.println(titles.get(i));
@@ -82,27 +71,3 @@ public class Bookstore {
         return this.NumberBooks;
     }
 }
-
-// Constructor with Arguments
-// public Bookstore(String StoreName)
-// {
-// this.setStoreName(StoreName);
-
-// }
-// //Print has used books
-// public void usedBooks(){
-// System.out.println("Has used books");
-// }
-
-// //Print if open on Sundays
-// public void Sundays(){
-// System.out.println("Open on Sundays");
-// }
-// }
-
-// //instantiate and use store object
-// Bookstore bookstore= new Bookstore(StoreName);
-// bookstore.StoreName="Park Road Bookstore";
-// bookstore.usedBooks();
-// bookstore.Sundays();
-// System.out.println(bookstore);
