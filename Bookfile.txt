@@ -1,5 +1,4 @@
 Programming in Java
-Programming in Java
 Java Pearls
 Database Design
 Practical Enterprise Software Development Techniques

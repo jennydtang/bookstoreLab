@@ -10,7 +10,7 @@ import java.util.stream.Stream;
 public class Utils {
     public static void loadStringsToArray(final ArrayList<String> arrList) throws IOException {
         final Path path = Paths.get("Bookfile.txt");
-        System.out.print(path);
+        // System.out.print(path);
         arrList.clear();
 
         // The stream file will also be closed here
