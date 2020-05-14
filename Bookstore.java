@@ -16,24 +16,6 @@ public class Bookstore {
     private boolean OpenToday;
     private ArrayList<String> titles;
 
-    public void findBook() {
-        Scanner.userInput = new Scanner(System.in);
-        System.out.println("Give me a keyword");
-        String bookkeyword = userInput.nextLine();
-        System.out.print(bookkeyword);
-
-        int count = 0;
-        for (String string : titles) {
-            if (string.contains(bookkeyword)) {
-                System.out.println("Here are the books we found with your word: " + string);
-                count++;
-            }
-        }
-        if (count == 0) {
-            System.out.println("We don't have that.");
-        }
-    }
-
     // create a Constructor (Overloading)
     // public Bookstore() {
     // System.out.println("Testing Empty Constructor");
@@ -135,4 +117,12 @@ public class Bookstore {
         return this.OpenToday;
     }
 
+    public void findBook(String bookkeyword) {
+        for (String string : titles) {
+            if (string.contains(bookkeyword)) {
+                System.out.println("Here is a book with your key word: " + string);
+
+            }
+        }
+    }
 }

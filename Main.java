@@ -17,7 +17,10 @@ public class Main {
         System.out.println("We are open today? " + parkroad.getOpenToday());
 
         parkroad.gettitles();
-        // parkroad.findBook();
+        Scanner userInput = new Scanner(System.in);
+        System.out.println("Tell me what book you want?");
+        String bookkeyword = userInput.nextLine();
+        parkroad.findBook(bookkeyword);
 
     }
 }
