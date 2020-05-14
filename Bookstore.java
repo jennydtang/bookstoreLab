@@ -72,7 +72,7 @@ public class Bookstore {
         return this.UsedBooks;
     }
 
-    // getter and setter for Used Books
+    // getter and setter for Number of Books
     public void setNumberBooks(int NumberBooks) {
         this.NumberBooks = NumberBooks;
     }
@@ -117,12 +117,18 @@ public class Bookstore {
         return this.OpenToday;
     }
 
+    // Finding a book
     public void findBook(String bookkeyword) {
-        for (String string : titles) {
-            if (string.contains(bookkeyword)) {
-                System.out.println("Here is a book with your key word: " + string);
+        int i = 0;
+        for (String yourbooks : titles) {
+            if (yourbooks.contains(bookkeyword)) {
+                i++;// use this to loop through without going to the next loop
+                System.out.println("Here is a book with your key word: " + yourbooks);
 
             }
+        }
+        if (i == 0) {// only go to this loop if no book is found with key word
+            System.out.println("Nope, we don't have that");
         }
     }
 }
